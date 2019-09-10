@@ -1,4 +1,4 @@
-# Custom JUnit Annotation
+# Custom JUnit Annotation [![CircleCI](https://circleci.com/gh/markwhitaker/CustomJUnitAnnotation.svg?style=shield)](https://circleci.com/gh/markwhitaker/CustomJUnitAnnotation)
 
 ## Usage
 
