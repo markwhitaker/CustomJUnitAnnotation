@@ -4,9 +4,9 @@ import org.junit.runner.Description
 import org.junit.runners.BlockJUnit4ClassRunner
 import org.junit.runners.model.FrameworkMethod
 
-class TicketTestRunner(c: Class<*>) : BlockJUnit4ClassRunner(c) {
+class RequirementTrackingTestRunner(c: Class<*>) : BlockJUnit4ClassRunner(c) {
     override fun describeChild(method: FrameworkMethod?): Description {
-        val testsTicketsAnnotation = method?.getAnnotation(TestsTickets::class.java)
+        val testsTicketsAnnotation = method?.getAnnotation(TestsRequirements::class.java)
         return if (testsTicketsAnnotation == null) {
             super.describeChild(method)
         } else {
